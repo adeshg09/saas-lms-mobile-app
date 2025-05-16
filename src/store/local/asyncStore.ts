@@ -3,8 +3,12 @@ import AsyncStorage from '@react-native-async-storage/async-storage'
 
 // --------------------------------------------------------------------------------------------------
 
-const localStoreKeys = {}
+/* Constants */
+const localStoreKeys = {
+	THEME_MODE: '@app_theme_mode',
+}
 
+/* Functions */
 const setItem = async (key: string, value: any) => {
 	try {
 		const data = JSON.stringify(value)

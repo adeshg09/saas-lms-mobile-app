@@ -7,6 +7,7 @@ import { Provider } from 'react-redux'
 
 /* Local Imports */
 import Router from './src/router'
+import { ThemeProvider } from './src/context/ThemeContext'
 import store from './src/store/store'
 
 // -------------------------------------------------------------------------------------------------------------------------
@@ -14,9 +15,11 @@ import store from './src/store/store'
 /* Components */
 const App = () => {
 	return (
-		<Provider store={store}>
-			<Router />
-		</Provider>
+		<ThemeProvider>
+			<Provider store={store}>
+				<Router />
+			</Provider>
+		</ThemeProvider>
 	)
 }
 

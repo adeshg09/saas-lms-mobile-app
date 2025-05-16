@@ -13,11 +13,11 @@ interface Colors {
 	grey: Record<50 | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900, string>
 
 	gradient: {
-		blue: string
-		yellow: string
-		green: string
-		orange: string
-		red: string
+		blue: [string, string]
+		yellow: [string, string]
+		green: [string, string]
+		orange: [string, string]
+		red: [string, string]
 	}
 
 	dark: {
@@ -113,11 +113,11 @@ const colors: Colors = {
 	// Gradients
 
 	gradient: {
-		blue: 'linear-gradient(286.17deg, #335EF7 0%, #5F82FF 100%)',
-		yellow: 'linear-gradient(286.17deg, #FACC15 0%, #FFE580 100%)',
-		green: 'linear-gradient(286.17deg, #22BB9C 0%, #35DEBC 100%)',
-		orange: 'linear-gradient(286.17deg, #FB9400 0%, #FFAB38 100%)',
-		red: 'linear-gradient(286.17deg, #FF4D67 0%, #FF8A9B 100%)',
+		blue: ['#335EF7', '#5F82FF'],
+		yellow: ['#FACC15', '#FFE580'],
+		green: ['#22BB9C', '#35DEBC'],
+		orange: ['#FB9400', '#FFAB38'],
+		red: ['#FF4D67', '#FF8A9B'],
 	},
 
 	// Dark Colors
